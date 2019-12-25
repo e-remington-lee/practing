@@ -10,8 +10,8 @@ public class Main {
     private static Object[] bob;
 
     public static void main(String[] args) {
-        List<Object> namesList = Arrays.asList(1,2,"alex");
-        ArrayList<Object> otherList = new ArrayList<>(namesList);
+        List<Object> namesList = Arrays.asList(20);
+        ArrayList<Object> otherList = new ArrayList<>(20);
         namesList.stream().filter(y->!y.equals(1) && !y.equals(2)).forEach(otherList::add);
         System.out.println(otherList);
 
@@ -24,16 +24,5 @@ public class Main {
         bob = otherList.toArray(new Object[otherList.size()]);
     }
 
-//    public static int[] resize(int[] x, int y) {
-//
-//        int[] copy = x;
-//
-//        x = new int[copy.length+1];
-//        for (int i=0;i<copy.length;i++){
-//            x[i]= copy[i];
-//        }
-//        x[5] = y;
-//        return x;
-//    }
 
 }
