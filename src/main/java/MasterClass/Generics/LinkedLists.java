@@ -2,7 +2,7 @@ package main.java.MasterClass.Generics;
 
 import java.util.*;
 
-public class Part1 {
+public class LinkedLists {
     public static void main(String[] args) {
         LinkedList<String> ll = new LinkedList<String>();
         ll.add("f");
@@ -15,11 +15,14 @@ public class Part1 {
         addOrder(ll, "b");
         addOrder(ll, "c");
 
-
-
-        for (String s : ll){
-            System.out.println(s);
+        Iterator i2 = ll.iterator();
+        while(i2.hasNext()) {
+            System.out.println(i2.next());
         }
+
+//        for (String s : ll){
+//            System.out.println(s);
+//        }
     }
 
     private static boolean addOrder(LinkedList<String> ll, String f) {
