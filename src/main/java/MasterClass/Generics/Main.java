@@ -27,9 +27,5 @@ public class Main {
         s.addTeam(team1);
         s.addTeam(team2);
         s.addTeam(team3);
-
-        s.compareTo()
-
-
     }
 }

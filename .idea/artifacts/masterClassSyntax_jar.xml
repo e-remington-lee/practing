@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="masterClassSyntax:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/masterClassSyntax_jar</output-path>
+    <root id="archive" name="masterClassSyntax.jar">
+      <element id="module-output" name="masterClassSyntax" />
+      <element id="library" level="module" name="JUnit4" module-name="masterClassSyntax" />
+    </root>
+  </artifact>
+</component>
