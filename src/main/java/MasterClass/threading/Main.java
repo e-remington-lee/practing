@@ -10,7 +10,8 @@ public class Main {
             public void run(){
                 System.out.println("running from: "+ currentThread().getName());
                 try {
-                    at.join();
+                    at.join(1000);
+                    System.out.println("thread terminated or timed out");
                 } catch (InterruptedException e) {
                     System.out.println("bad, bad bad");
                 }
